@@ -1,21 +1,13 @@
 {
-  "name": "advanced-css-project",
+  "name": "natours",
   "version": "1.0.0",
-  "description": "Landing page for natorus",
+  "description": "A natours project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rahmat058/Advanced-CSS-Course-Project.git"
+    "compile:sass": "node-sass sass/main.scss css/style.css"
   },
   "author": "Rahmat",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rahmat058/Advanced-CSS-Course-Project/issues"
-  },
-  "homepage": "https://github.com/rahmat058/Advanced-CSS-Course-Project#readme",
   "devDependencies": {
     "node-sass": "^4.12.0"
   }
