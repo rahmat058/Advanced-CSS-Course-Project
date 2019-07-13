@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*** 
+    Font Size Should be default 10px 
+    But px is a bad coading practice
+    so it should be convert percentage
+    Here 16px is default browser font-size 
+      & 10px is root font-size 
+    Like- (10px / 16px) =  0.625px * 100 % = 62.5% 
+    It should be 62.5%
+  */
+
+  
+  // This defines 1 rem is Global
+  font-size: 62.5%;   
+}
+
+body {
+   box-sizing: border-box;
+}
