@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css-project",
+  "version": "1.0.0",
+  "description": "Landing page for natorus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahmat058/Advanced-CSS-Course-Project.git"
+  },
+  "author": "Rahmat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahmat058/Advanced-CSS-Course-Project/issues"
+  },
+  "homepage": "https://github.com/rahmat058/Advanced-CSS-Course-Project#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
