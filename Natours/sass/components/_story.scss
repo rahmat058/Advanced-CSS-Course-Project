@@ -1,9 +1,9 @@
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: rgba($color-white, .6);
-  border-radius: .3rem;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-white, 0.6);
+  border-radius: 0.3rem;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
@@ -15,7 +15,7 @@
     float: left;
     background-color: orangered;
     -webkit-shape-outside: circle(50% at 46% 48%);
-    shape-outside: circle(50% at 46% 48%); 
+    shape-outside: circle(50% at 46% 48%);
 
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -27,8 +27,8 @@
   &__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
-    transition: all .5s;
-    backface-visibility: hidden; 
+    transition: all 0.5s;
+    backface-visibility: hidden;
   }
 
   &__text {
@@ -45,8 +45,8 @@
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden; 
+    transition: all 0.5s;
+    backface-visibility: hidden;
   }
 
   &:hover &__caption {
@@ -56,6 +56,6 @@
 
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
-    filter: blur(.3rem);
+    filter: blur(0.3rem);
   }
 }
