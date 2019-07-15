@@ -1,3 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*** 
+    Font Size Should be default 10px 
+    But px is a bad coading practice
+    so it should be convert percentage
+    Here 16px is default browser font-size 
+      & 10px is root font-size 
+    Like- (10px / 16px) =  0.625px * 100 % = 62.5% 
+    It should be 62.5%
+  */
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -25,28 +47,6 @@
   100% {
     opacity: 1;
     transform: translate(0); } }
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  /*** 
-    Font Size Should be default 10px 
-    But px is a bad coading practice
-    so it should be convert percentage
-    Here 16px is default browser font-size 
-      & 10px is root font-size 
-    Like- (10px / 16px) =  0.625px * 100 % = 62.5% 
-    It should be 62.5%
-  */
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -341,6 +341,42 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: .2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: .3rem solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 0.3rem solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 0.3rem solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .story {
   width: 75%;

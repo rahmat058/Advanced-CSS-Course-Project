@@ -2,8 +2,8 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animations";
 @import "base/base";
+@import "base/animations";
 @import "base/typhography";
 @import "base/utilities";
 
@@ -12,6 +12,7 @@
 @import "components/card";
 @import "components/composition";
 @import "components/feature-box";
+@import "components/form";
 @import "components/story";
 
 @import "layout/grid";
