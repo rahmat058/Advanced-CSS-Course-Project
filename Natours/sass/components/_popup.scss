@@ -8,6 +8,11 @@
   z-index: 9999;
   transition: all .3s;
   
+  // Pop up hidden here
+  opacity: 0;
+  visibility: hidden;
+
+  
   &__content {
     @include absCenter;
 
@@ -58,9 +63,6 @@
   }
 
 
-  // Pop up hidden here
-  opacity: 0;
-  visibility: hidden;
 
   // Pop up show here
   &:target {
