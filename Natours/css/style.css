@@ -1,10 +1,26 @@
 /**
-=================================  Device Breakpoint  ====================
+================================= Responsive Device Breakpoint  ====================
 0 - 600px:      Phone
 600 - 900px:    Tablet Portrait
 900 - 1200px:   Tablet Landscape
 [1200 - 1800]px whrer normal styles are applyied
 1800px+ :       Big Desktop
+
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  [em] is the best option for media query not [rem]
+  1em  = 16px;
+  1rem = 10px;
+
+  So, (600px / 16px)  = 37.5em;
+      (900px / 16px)  = 56.5em;
+      (1200px / 16px) = 75em;
+      (1800px / 16px) = 112.5em;
+
 ==================================   End  =================================
 */
 *,
@@ -23,8 +39,20 @@ html {
       & 10px is root font-size 
     Like- (10px / 16px) =  0.625px * 100 % = 62.5% 
     It should be 62.5%
+
+    1rem = 10px;
+    1em  = 16px;
   */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
