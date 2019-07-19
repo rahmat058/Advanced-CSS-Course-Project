@@ -139,7 +139,7 @@
   }
 
   &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
+    background-color: transparent; 
   }
 
   &__checkbox:checked + &__button &__icon::before {
