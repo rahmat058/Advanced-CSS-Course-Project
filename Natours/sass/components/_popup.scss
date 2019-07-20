@@ -4,27 +4,33 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba($color-black, .8);
+  background-color: rgba($color-black, 0.8);
   z-index: 9999;
-  transition: all .3s;
-  
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
+  }
+
   // Pop up hidden here
   opacity: 0;
   visibility: hidden;
 
-  
   &__content {
     @include absCenter;
 
     width: 75%;
     background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, .2);
-    border-radius: .3rem;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 0.3rem;
     display: table;
     overflow: hidden;
     opacity: 0;
-    transform: translate(-50%, -50%) scale(.25);
-    transition: all .5s .2s;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s;
   }
 
   &__left {
@@ -50,19 +56,17 @@
 
     -moz-column-count: 2;
     -moz-column-gap: 4rem; // 1em = 14px;
-    -moz-column-rule: .1rem solid $color-grey-light-2;
+    -moz-column-rule: 0.1rem solid $color-grey-light-2;
 
     column-count: 2;
     column-gap: 4rem; // 1em = 14px;
-    column-rule: .1rem solid $color-grey-light-2;
+    column-rule: 0.1rem solid $color-grey-light-2;
 
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
   }
-
-
 
   // Pop up show here
   &:target {
@@ -86,7 +90,7 @@
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
-      transition: all .2s;
+      transition: all 0.2s;
       line-height: 1;
     }
 
