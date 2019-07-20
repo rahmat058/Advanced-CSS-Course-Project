@@ -17,9 +17,8 @@
   </head>
 
   <body>
-
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
@@ -29,11 +28,27 @@
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"> <span>01</span> About Natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"> <span>02</span> Your Benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"> <span>03</span> Popular Tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"> <span>04</span> Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"> <span>05</span> Book Now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>01</span> About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>02</span> Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>03</span> Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>04</span> Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>05</span> Book Now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -49,7 +64,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -415,7 +432,16 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+            media="(max-width: 37.5em)"
+          >
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full logo"
+          />
+        </picture>
       </div>
 
       <div class="row">
@@ -458,15 +484,32 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
-          <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+          <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img" />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this terms before booking</h3>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read this terms before booking
+          </h3>
           <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Consectetur a erat nam at lectus urna. Vitae semper quis lectus nulla at volutpat diam ut. Vulputate mi sit amet mauris commodo quis imperdiet. At ultrices mi tempus imperdiet nulla. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Urna nec tincidunt praesent semper feugiat. Netus et malesuada fames ac turpis. Non enim praesent elementum facilisis leo vel fringilla. Lacus luctus accumsan tortor posuere ac ut consequat. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Nunc congue nisi vitae suscipit. Nullam ac tortor vitae purus faucibus ornare suspendisse. Sed risus pretium quam vulputate. Vel elit scelerisque mauris pellentesque pulvinar.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
+            in hac habitasse platea dictumst vestibulum rhoncus. Consectetur a
+            erat nam at lectus urna. Vitae semper quis lectus nulla at volutpat
+            diam ut. Vulputate mi sit amet mauris commodo quis imperdiet. At
+            ultrices mi tempus imperdiet nulla. Convallis tellus id interdum
+            velit laoreet id donec ultrices tincidunt. Urna nec tincidunt
+            praesent semper feugiat. Netus et malesuada fames ac turpis. Non
+            enim praesent elementum facilisis leo vel fringilla. Lacus luctus
+            accumsan tortor posuere ac ut consequat. Nullam ac tortor vitae
+            purus faucibus ornare suspendisse sed. Nunc congue nisi vitae
+            suscipit. Nullam ac tortor vitae purus faucibus ornare suspendisse.
+            Sed risus pretium quam vulputate. Vel elit scelerisque mauris
+            pellentesque pulvinar.
           </p>
 
           <a href="#" class="btn btn--green">Book now</a>
@@ -476,13 +519,8 @@
   </body>
 </html>
 
-
-
-
-
-
 <!-- Customize Grid -->
-    <!--  
+<!--  
 		<section class="grid-test">
 			<div class="row">
 				<div class="col-1-of-2">
