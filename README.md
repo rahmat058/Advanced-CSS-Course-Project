@@ -1,4 +1,4 @@
-# Advanced CSS Course Projects
+# Advanced CSS Course Projects 
 
 This workspace contains two practice projects built while learning advanced CSS and Sass techniques.
 
